@@ -57,9 +57,13 @@ There are four scripts for launching simulation experiments:
 And four scripts for plotting results:  
 
 - plot_results.py: plots the learning curves of the algorithms in the scenario given as a input (e.g. "python plot_results.py 0" plots paper's figure 3)
+<img src=figures/subplot_0.jpg" align="right" width="40%"/>  
 - plot_trained_results.py: plots the performance metrics during the inference phase of the MBRL algorithms (paper's figure 6)  
+<img src=figures/trained_figure.jpg" align="right" width="40%"/>  
 - plot_adjustment_results.py: plots the adjustment rate of KBRL (paper's figure 7)  
+<img src=figures/adjustments.jpg" align="right" width="40%"/>  
 - plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)  
+<img src=figures/accuracies.jpg" align="right" width="40%"/>  
 
 ## Project structure
 
