@@ -65,7 +65,7 @@ And four scripts for plotting results:
 
 Figure 3 of the paper showing the learning curves in scenario 0 (4 eMMB slices and 1 mMTC slice):  
 
-<img src="figures/subplots_0.png" align="center" width="60%"/>  
+<img src="figures/subplots_0.png" align="center" width="100%"/>  
 
 ## Project structure
 
