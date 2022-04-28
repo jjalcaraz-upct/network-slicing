@@ -2,7 +2,9 @@
 
 ## Description
 
-Source code of a network slicing environment and a control algorithm that allocates time-frequency resources (radio bearers, RBs, in the radio frames) among several network slices. The environtment implements the OpenAI Gym https://github.com/openai/gym interface and interacts with Stable-Baselines RL agents https://github.com/hill-a/stable-baselines and Keras-RL agents https://github.com/keras-rl/keras-rl. This code was developed for the paper "Model-Based Reinforcement Learning with Kernels for Resource Allocation in RAN Slices", where the control algorithm, referred to as KBRL, is presented.
+Source code of a network slicing environment and a control algorithm that allocates time-frequency resources (radio bearers, RBs, in the radio frames) among several network slices. The environtment implements the OpenAI Gym https://github.com/openai/gym interface and interacts with Stable-Baselines RL agents https://github.com/hill-a/stable-baselines and Keras-RL agents https://github.com/keras-rl/keras-rl. This code was developed for the paper "[Model-Based Reinforcement Learning with Kernels for Resource Allocation in RAN Slices](paper/manuscript.pdf)", where the control algorithm, referred to as KBRL, is presented.
+
+<img src="img/general_diagram.eps" align="center" width="40%"/>
 
 ## How to use it
 
@@ -33,23 +35,25 @@ It is recommended to use a python virtual environment to install the above packa
 3. Go to the gym-ran_slice folder in the terminal window 
 
 4. Once in the gym-ran_slice folder run:
-        pip install -e .
+```python
+pip install -e .
+```
 
 ### Experiment scripts
 
 There are four scripts for launching simulation experiments:
 
-experiments_rl.py: runs the experiments with the RL agents of stable-baselines  
-experiments_kbrl.py: runs the experiments with the proposed KBRL algorithm  
-experiments_naf.py: runs the experiments with the NAF algorithm provided by keras-rl  
-experiment_dqn.py: runs the experiments with the DQN algorithm provided by stable-baselines  
+- experiments_rl.py: runs the experiments with the RL agents of stable-baselines  
+- experiments_kbrl.py: runs the experiments with the proposed KBRL algorithm  
+- experiments_naf.py: runs the experiments with the NAF algorithm provided by keras-rl  
+- experiment_dqn.py: runs the experiments with the DQN algorithm provided by stable-baselines  
 
 And four scripts for plotting results:  
 
-plot_results.py: plots the learning curves of the algorithms in the scenario given as a input (e.g. "python plot_results.py 0" plots paper's figure 3)  
-plot_trained_results.py: plots the performance metrics during the inference phase of the MBRL algorithms (paper's figure 6)  
-plot_adjustment_results.py: plots the adjustment rate of KBRL (paper's figure 7)  
-plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)  
+- plot_results.py: plots the learning curves of the algorithms in the scenario given as a input (e.g. "python plot_results.py 0" plots paper's figure 3)
+- plot_trained_results.py: plots the performance metrics during the inference phase of the MBRL algorithms (paper's figure 6)  
+- plot_adjustment_results.py: plots the adjustment rate of KBRL (paper's figure 7)  
+- plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)  
 
 ## Project structure
 
@@ -96,6 +100,12 @@ The paper:
   journal = {IEEE Transactions on Wireless Communications},  
   note = {under review},  
 }
+
+## Acknowledgements
+
+This work was supported by project grant PID2020-116329GB-C22 funded by MCIN / AEI / 10.13039/501100011033
+
+<img src="img/MICINN_Gob_Web_AEI_2.jpg" align="right" width="40%"/>
 
 ## Licensing information
 
