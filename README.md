@@ -6,6 +6,12 @@ Source code of a network slicing environment and a control algorithm that alloca
 
 <img src="img/general_diagram.png" align="center" width="40%"/>
 
+## Acknowledgements
+
+This work was supported by project grant PID2020-116329GB-C22 funded by MCIN / AEI / 10.13039/501100011033  
+
+<img src="img/MICINN_Gob_Web_AEI_2.jpg" align="right" width="40%"/>
+
 ## How to use it
 
 ### Requirements
@@ -100,12 +106,6 @@ The paper:
   journal = {IEEE Transactions on Wireless Communications},  
   note = {under review},  
 }
-
-## Acknowledgements
-
-This work was supported by project grant PID2020-116329GB-C22 funded by MCIN / AEI / 10.13039/501100011033
-
-<img src="img/MICINN_Gob_Web_AEI_2.jpg" align="right" width="40%"/>
 
 ## Licensing information
 
