@@ -10,17 +10,17 @@ Source code of a network slicing environment and a control agent that allocates 
 
 The enviroment requires Open-AI gym, Numpy and Pandas packages. The RL agents are provided by stable-baselines (version 2, which uses TensorFlow), and the scripts for plotting results use scipy and matplotlib. The following versions of these packages are known to work fine with the environment:
 
-gym==0.15.3
-numpy==1.19.1
-pandas==0.25.2
-stable-baselines==2.10.1
-tensorflow==1.9.0
-scipy==1.5.4
-matplotlib==3.3.4
+gym==0.15.3  
+numpy==1.19.1  
+pandas==0.25.2  
+stable-baselines==2.10.1  
+tensorflow==1.9.0  
+scipy==1.5.4  
+matplotlib==3.3.4  
 
 To run the NAF agent, Keras and Keras-RL are also required. The tested versions are:
-Keras==2.2.1
-keras-rl==0.4.2
+Keras==2.2.1  
+keras-rl==0.4.2  
 
 It is recommended to use a python virtual environment with the above packages.
 
