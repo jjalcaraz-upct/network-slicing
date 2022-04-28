@@ -63,8 +63,9 @@ And four scripts for plotting results:
 - plot_adjustment_results.py: plots the adjustment rate of KBRL (paper's figure 7)  
 - plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)  
 
-Figure 3 of the paper showing the learning curves in scenario 0 (4 eMMB slices and 1 mMTC slice):
-<img src="figures/subplots_0.png" align="right" width="60%"/>  
+Figure 3 of the paper showing the learning curves in scenario 0 (4 eMMB slices and 1 mMTC slice):  
+
+<img src="figures/subplots_0.png" align="center" width="60%"/>  
 
 ## Project structure
 
