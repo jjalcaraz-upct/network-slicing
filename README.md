@@ -8,7 +8,7 @@ Source code of a network slicing environment and a control agent that allocates 
 
 ### Requirements
 
-The enviroment requires Open-AI gym, Numpy and Pandas packages. The RL agents are provided by stable-baselines (version 2, which uses TensorFlow), and the scripts for plotting results use scipy and matplotlib. The following versions of these packages are known to work fine with the environment:
+The enviroment requires Open-AI gym, Numpy and Pandas packages. The RL agents are provided by stable-baselines (version 2, which uses TensorFlow), and the scripts for plotting results use scipy and matplotlib. The following versions of these packages are known to work fine with the environment:  
 
 gym==0.15.3  
 numpy==1.19.1  
@@ -18,7 +18,7 @@ tensorflow==1.9.0
 scipy==1.5.4  
 matplotlib==3.3.4  
 
-To run the NAF agent, Keras and Keras-RL are also required. The tested versions are:
+To run the NAF agent, Keras and Keras-RL are also required. The tested versions are:  
 Keras==2.2.1  
 keras-rl==0.4.2  
 
@@ -39,17 +39,17 @@ It is recommended to use a python virtual environment with the above packages.
 
 There are four scripts for launching simulation experiments:
 
-_rl_experiments.py: runs the experiments with the RL agents of stable-baselines
-_kbrl_experiments.py: runs the experiments with the proposed KBRL algorithm
-_naf_experiments.py: runs the experiments with the NAF algorithm provided by keras-rl
-_dqn_experiment.py: runs the experiments with the DQN algorithm provided by stable-baselines
+_rl_experiments.py: runs the experiments with the RL agents of stable-baselines  
+_kbrl_experiments.py: runs the experiments with the proposed KBRL algorithm  
+_naf_experiments.py: runs the experiments with the NAF algorithm provided by keras-rl  
+_dqn_experiment.py: runs the experiments with the DQN algorithm provided by stable-baselines  
 
-And four scripts for plotting results:
+And four scripts for plotting results:  
 
-plot_results.py: plots the learning curves of the algorithms in the scenario given as a input:
-    python plot_results.py 0 --> plots paper's figure 3
-    python plot_results.py 1 --> plots paper's figure 4
-    python plot_results.py 2 --> plots paper's figure 5
-plot_trained_results.py: plots the performance metrics during the inference phase of the MBRL algorithms (paper's figure 6)
-plot_adjustment_results.py: plots the adjustment rate of KBRL (paper's figure 7)
-plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)
+plot_results.py: plots the learning curves of the algorithms in the scenario given as a input:  
+    python plot_results.py 0 --> plots paper's figure 3  
+    python plot_results.py 1 --> plots paper's figure 4  
+    python plot_results.py 2 --> plots paper's figure 5  
+plot_trained_results.py: plots the performance metrics during the inference phase of the MBRL algorithms (paper's figure 6)  
+plot_adjustment_results.py: plots the adjustment rate of KBRL (paper's figure 7)  
+plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)  
