@@ -59,12 +59,19 @@ And four scripts for plotting results:
 And four scripts for plotting results:  
 
 - plot_results.py: plots the learning curves of the algorithms in the scenario given as a input (e.g. "python plot_results.py 0" plots paper's figure 3)  
+
 <img src="figures/subplots_0.png" align="right" width="60%"/>  
+
 - plot_trained_results.py: plots the performance metrics during the inference phase of the MBRL algorithms (paper's figure 6)  
+
 <img src="figures/trained_figure.png" align="right" width="60%"/>  
+
 - plot_adjustment_results.py: plots the adjustment rate of KBRL (paper's figure 7)  
+
 <img src="figures/adjustments.png" align="right" width="60%"/>  
+
 - plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)  
+
 <img src="figures/accuracies.png" align="right" width="60%"/>  
 
 ## Project structure
