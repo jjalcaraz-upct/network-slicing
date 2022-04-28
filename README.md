@@ -59,25 +59,25 @@ And four scripts for plotting results:
 
 The following files implement the environment:  
 
-node_b.py  
-slice_ran.py  
-slice_l1.py  
-channel_models.py  
-traffic_generators.py  
-schedulers.py  
-./gym-ran_slice/gym_ran_slice/ran_slice.py  
+- node_b.py  
+- slice_ran.py  
+- slice_l1.py  
+- channel_models.py  
+- traffic_generators.py  
+- schedulers.py  
+- ./gym-ran_slice/gym_ran_slice/ran_slice.py  
 
 The KBRL agent is implemented in:
 
-kbrl_control.py
-./algorithms/kernel.py
-./algorithms/projectron.py
+- kbrl_control.py
+- ./algorithms/kernel.py
+- ./algorithms/projectron.py
 
 The following files are required to build the experiments:
 
-scenario_creator.py: creates the environments and the KBRL agents  
-wrapper.py: allows the interaction with stable-baselines  
-naf_agent_creator.py: creates NAF agents   
+- scenario_creator.py: creates the environments and the KBRL agents  
+- wrapper.py: allows the interaction with stable-baselines  
+- naf_agent_creator.py: creates NAF agents   
 
 ## How to cite this work
 
