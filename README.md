@@ -2,7 +2,7 @@
 
 ## Description
 
-Source code of a network slicing environment and a control algorithm that allocates time-frequency resources (radio bearers, RBs, in the radio frames) among several network slices. The environtment implements the OpenAI Gym https://github.com/openai/gym interface and interacts with Stable-Baselines RL agents https://github.com/hill-a/stable-baselines and Keras-RL agents https://github.com/keras-rl/keras-rl. This code was developed for the paper "[Model-Based Reinforcement Learning with Kernels for Resource Allocation in RAN Slices](paper/manuscript.pdf)", where the control algorithm, referred to as KBRL, is presented.
+Source code of a network slicing environment and a control algorithm (KBRL) that allocates time-frequency resources (radio bearers, RBs, in the radio frames) among several network slices. The environtment implements the OpenAI Gym https://github.com/openai/gym interface and interacts with Stable-Baselines RL agents https://github.com/hill-a/stable-baselines and Keras-RL agents https://github.com/keras-rl/keras-rl. This code was developed for the paper "[Model-Based Reinforcement Learning with Kernels for Resource Allocation in RAN Slices](paper/manuscript.pdf)", where KBRL was presented.
 
 <img src="img/general_diagram.png" align="center" width="40%"/>  
 
