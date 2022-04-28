@@ -39,10 +39,10 @@ It is recommended to use a python virtual environment to install the above packa
 
 There are four scripts for launching simulation experiments:
 
-_rl_experiments.py: runs the experiments with the RL agents of stable-baselines  
-_kbrl_experiments.py: runs the experiments with the proposed KBRL algorithm  
-_naf_experiments.py: runs the experiments with the NAF algorithm provided by keras-rl  
-_dqn_experiment.py: runs the experiments with the DQN algorithm provided by stable-baselines  
+experiments_rl.py: runs the experiments with the RL agents of stable-baselines  
+experiments_kbrl.py: runs the experiments with the proposed KBRL algorithm  
+experiments_naf.py: runs the experiments with the NAF algorithm provided by keras-rl  
+experiment_dqn.py: runs the experiments with the DQN algorithm provided by stable-baselines  
 
 And four scripts for plotting results:  
 
