@@ -4,13 +4,15 @@
 
 Source code of a network slicing environment and a control algorithm (KBRL) that allocates time-frequency resources (radio bearers, RBs, in the radio frames) among several network slices. The environtment implements the OpenAI Gym https://github.com/openai/gym interface and interacts with Stable-Baselines RL agents https://github.com/hill-a/stable-baselines and Keras-RL agents https://github.com/keras-rl/keras-rl. This code was developed for the paper "[Model-Based Reinforcement Learning with Kernels for Resource Allocation in RAN Slices](paper/manuscript.pdf)", where KBRL was presented.
 
-<img src="img/general_diagram.png" align="center" width="40%"/>  
+<img src="img/general_diagram.png" align="center" width="40%"/>
+
+The objective of the control agent is to make the most efficient use of the resources while statisfying the service level agreements (SLAs) of the network slices.
 
 ## Acknowledgements
 
 This work was supported by project grant PID2020-116329GB-C22 funded by MCIN / AEI / 10.13039/501100011033  
 
-<img src="img/MICINN_Gob_Web_AEI_2.jpg" align="right" width="40%"/>  
+<img src="img/MICINN_Gob_Web_AEI_2.jpg" align="right" width="40%"/>
 
 ## How to use it
 
@@ -56,15 +58,12 @@ There are four scripts for launching simulation experiments:
 
 And four scripts for plotting results:  
 
-And four scripts for plotting results:  
-
 - plot_results.py: plots the learning curves of the algorithms in the scenario given as a input (e.g. "python plot_results.py 0" plots paper's figure 3)  
 - plot_trained_results.py: plots the performance metrics during the inference phase of the MBRL algorithms (paper's figure 6)  
 - plot_adjustment_results.py: plots the adjustment rate of KBRL (paper's figure 7)  
 - plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)  
 
-Figure 3 of the paper showing the learning curves in scenario 0 (4 eMMB slices and 1 mMTC slice):  
-
+Figure 3 of the paper showing the performance curves ifor a scenario with 5 eMMB RAN slices, where KBRL attains the lowest rate of SLA violations while using less resources than model-based RL algorithms:
 <img src="figures/subplots_0.png" align="center" width="100%"/>  
 
 ## Project structure
@@ -93,7 +92,7 @@ The following files are required to build the experiments:
 
 ## How to cite this work
 
-The code:
+The code of this repository:
 
 @misc{net_slice,  
     title={Network slicing environment},  
@@ -102,7 +101,7 @@ The code:
     year={2022}  
 }
 
-The paper:
+The paper where KBRL was presented:
 
 @misc{alcaraz2022,
   author = {Alcaraz, Juan J. and Losilla, Fernando and Zanella, Andrea and Zorzi, Michele},  
@@ -115,4 +114,4 @@ The paper:
 
 ## Licensing information
 
-This code is released under MIT lisence.
+This code is released under the MIT lisence.
