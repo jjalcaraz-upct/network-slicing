@@ -12,7 +12,7 @@ The objective of the control agent is to make the most efficient use of the reso
 
 This work was supported by project grant PID2020-116329GB-C22 funded by MCIN / AEI / 10.13039/501100011033  
 
-<img src="img/MICINN_Gob_Web_AEI_2.jpg" align="right" width="40%"/>
+<img src="img/MICINN_Gob_Web_AEI_2.jpg" align="center" width="40%"/>
 
 ## How to use it
 
@@ -58,10 +58,11 @@ There are four scripts for launching simulation experiments:
 
 And four scripts for plotting results:  
 
-- plot_results.py: plots the learning curves of the algorithms in the scenario given as a input (e.g. "python plot_results.py 0" plots paper's figure 3)  
+- plot_results.py: plots the learning curves of the algorithms in the scenario given as a input (e.g. ```python plot_results.py 0``` plots paper's figure 3)  
 - plot_trained_results.py: plots the performance metrics during the inference phase of the MBRL algorithms (paper's figure 6)  
 - plot_adjustment_results.py: plots the adjustment rate of KBRL (paper's figure 7)  
-- plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)  
+- plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)
+- plot_oracle_results.py: plots the performance metrics of KBRL, DNQ, NAF and ORACLE (paper's figure 10)  
 
 Figure 3 of the paper showing the performance curves ifor a scenario with 5 eMMB RAN slices, where KBRL attains the lowest rate of SLA violations while using less resources than model-based RL algorithms:
 <img src="figures/subplots_0.png" align="center" width="100%"/>  
