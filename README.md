@@ -2,7 +2,7 @@
 
 ## Description
 
-Source code of a network slicing environment where time-frequency resources (the resource blocks, RBs, of the radio frames) must be allocated among several network slices at each decision stage. The environtment implements the OpenAI Gym https://github.com/openai/gym interface and interacts with Stable-Baselines RL agents https://github.com/hill-a/stable-baselines and Keras-RL agents https://github.com/keras-rl/keras-rl. A model-based RL control algorithm (KBRL) is included. At each decision stage, the control agent observes a set of variables describing the state of the system, and a signal indicating the fulfillment or violation of the service level agreement (SLA) for each slice. Based on these observations, the agent selects a resource allocation with which the system will operate until the next decision stage. The objective of the control agent is to allocate the resources efficiently while statisfying the SLAs of the network slices.
+Source code of a network slicing environment where time-frequency resources must be allocated among several network slices at each decision stage. The environtment implements the OpenAI Gym https://github.com/openai/gym interface and can interact Stable-Baselines RL agents https://github.com/hill-a/stable-baselines and Keras-RL agents https://github.com/keras-rl/keras-rl. Additionally, the code includes a novel model-based RL control algorithm (KBRL). At each decision stage, the control agent observes a set of variables describing the state of the system, and a signal indicating the fulfillment or violation of the service level agreement (SLA) for each slice. Based on these observations, the agent makes a resource allocation decision specifying the resource blocks, RBs, assigned to each slice in the upcoming radio frames. The system will operate with this allocation until the next decision stage. The objective of the control agent is to allocate the resources efficiently (i.e. use the minimum required number of RBs) while statisfying the SLAs of the network slices.
 
 <img src="img/general_diagram.png" align="center" width="40%"/>
 
@@ -64,7 +64,7 @@ And four scripts for plotting results:
 - plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)
 - plot_oracle_results.py: plots the performance metrics of KBRL, DNQ, NAF and ORACLE (paper's figure 10)  
 
-Figure 3 of the paper showing the performance curves ifor a scenario with 5 eMMB RAN slices, where KBRL attains the lowest rate of SLA violations while using less resources than model-based RL algorithms:
+Figure 3 of the paper showing the performance curves for a scenario with 5 eMMB RAN slices, where KBRL attains the lowest rate of SLA violations while using less resources than model-based RL algorithms:
 <img src="figures/subplots_0.png" align="center" width="100%"/>  
 
 ## Project structure
