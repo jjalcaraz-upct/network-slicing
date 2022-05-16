@@ -6,7 +6,7 @@ Source code of a network slicing environment where time-frequency resources must
 
 <img src="img/general_diagram.png" align="center" width="40%"/>
 
-This code was developed for the paper "[Model-Based Reinforcement Learning with Kernels for Resource Allocation in RAN Slices](paper/manuscript.pdf)", where KBRL was presented.
+This code was developed for the paper "[Model-Based Reinforcement Learning with Kernels for Resource Allocation in RAN Slices](paper.pdf)", where KBRL was presented.
 
 ## Acknowledgements
 
