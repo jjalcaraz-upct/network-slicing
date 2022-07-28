@@ -110,7 +110,7 @@ The paper where KBRL was presented:
   year = {2022},  
   publisher = {IEEE},  
   journal = {IEEE Transactions on Wireless Communications},  
-  note = {under review},  
+  note = {To Appear},  
 }
 
 ## Licensing information
