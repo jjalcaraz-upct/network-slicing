@@ -64,7 +64,7 @@ And four scripts for plotting results:
 - plot_accuracy_results.py: plots the accuracy of KBRL (paper's figure 8)
 - plot_oracle_results.py: plots the performance metrics of KBRL, DNQ, NAF and ORACLE (paper's figure 10)  
 
-Figure 3 of the paper showing the performance curves for a scenario with 5 eMMB RAN slices, where KBRL attains the lowest rate of SLA violations while using less resources than model-based RL algorithms:
+Figure 3 of the paper showing the performance curves for a scenario with 5 eMMB RAN slices, where KBRL attains the lowest rate of SLA violations while using less resources than model-free RL algorithms:
 <img src="figures/subplots_0.png" align="center" width="100%"/>  
 
 ## Project structure
