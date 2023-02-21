@@ -54,10 +54,11 @@ def upper_right(x):
     return 5*np.sqrt(3)*radius / 2 - np.sqrt(3)*x
 
 def location(x, y):
-    distance = np.sqrt((x - 1/3)**2 + y**2)
-    x_t = x-1/3
-    cos_theta = x_t*1/3 /(np.sqrt(x_t**2 + y**2) * 1/3)
+    x_t = x - 1/4
+    distance = np.sqrt(x_t**2 + y**2)
+    cos_theta = x_t / distance
     theta = np.arccos(cos_theta)
+    theta = np.degrees(theta) - 60
     return distance, theta
 
 def generate_xy(rng):
