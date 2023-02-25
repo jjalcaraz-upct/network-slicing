@@ -40,21 +40,27 @@ def inv_sigmoid(y, x0, k):
     x = -(1/k) * np.log(1/y - 1) + x0
     return (x)
 
-'''auxiliar functions defining a hexagonal cell'''
+'''auxiliary functions defining a hexagonal cell'''
+def find_y_value(x1, y1, x2, y2, x):
+    m = (y2 - y1) / (x2 - x1)  # Calculate the slope
+    b = -m * x1 + y1 # Calculate the y-intercept
+    y = m * x + b # Calculate the y-value when x is 0
+    return y
+
 def lower_left(x):
-    return np.sqrt(3)*radius / 2 - np.sqrt(3)*x
+    return find_y_value(0, 0.5, 0.25, 0, x)
 
 def lower_right(x):
-    return -1*3*np.sqrt(3)*radius / 2 + np.sqrt(3)*x
+    return find_y_value(0.75, 0, 1, 0.5, x)
 
 def upper_left(x):
-    return np.sqrt(3)*radius / 2 + np.sqrt(3)*x
+    return find_y_value(0, 0.5, 0.25, 1, x)
 
 def upper_right(x):
-    return 5*np.sqrt(3)*radius / 2 - np.sqrt(3)*x
+    return find_y_value(0.75, 1, 1, .5, x)
 
 def location(x, y):
-    x_t = x - 1/4
+    x_t = x - radius / 2
     distance = np.sqrt(x_t**2 + y**2)
     cos_theta = x_t / distance
     theta = np.arccos(cos_theta)
@@ -68,6 +74,8 @@ def generate_xy(rng):
         [x, y] = rng.random(2) 
         in_cell = (y > lower_left(x)) and (y > lower_right(x)) and (y < upper_left(x)) and (y < upper_right(x))
     return x, y
+
+'''functions defining the propagation and channel conditions'''
 
 def antenna_pattern(theta):
     # provides the gain of the annena according to TS 36.942 section 4.2 Antenna models
