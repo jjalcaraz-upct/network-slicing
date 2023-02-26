@@ -90,7 +90,7 @@ def macro_cell(rng, A = 128.1, B = 37.6):
     LogF = rng.normal(0,10)
     L = A + B * np.log10(R)
     gamma = 2.6
-    FSPL = 20*np.log10(2) + 93.45 + gamma*10*np.log10(R) # Free Space Path Loss (R in Km, f in GHz)
+    FSPL = 20*np.log10(2) + 92.45 + gamma*10*np.log10(R) # Free Space Path Loss (R in Km, f in GHz)
     L = max(L, FSPL)
     Rx_pw = Tx_pw - max(L + LogF - G, MCL)
     SINR = Rx_pw - IN - F
@@ -103,7 +103,7 @@ def free_space(rng, gamma = 2.6):
     R = max(d*Rmax, 0.1)
     G = Gmax + antenna_pattern(theta)
     LogF = rng.normal(0,10)
-    FSPL = 20*np.log10(2) + 93.45 + gamma*10*np.log10(R) # Free Space Path Loss (R in Km, f in GHz)
+    FSPL = 20*np.log10(2) + 92.45 + gamma*10*np.log10(R) # Free Space Path Loss (R in Km, f in GHz)
     Rx_pw = Tx_pw - max(FSPL + LogF - G, MCL)
     SINR = Rx_pw - IN - F
     return SINR
