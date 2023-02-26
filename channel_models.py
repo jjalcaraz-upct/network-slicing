@@ -103,7 +103,7 @@ def free_space(rng, gamma = 2.6):
     R = max(d*Rmax, 0.1)
     G = Gmax + antenna_pattern(theta)
     LogF = rng.normal(0,10)
-    FSPL = 20*np.log10(R) + 20*np.log10(2) + 93.45 + gamma*10*np.log10(R) # Free Space Path Loss (R in Km, f in GHz)
+    FSPL = 20*np.log10(2) + 93.45 + gamma*10*np.log10(R) # Free Space Path Loss (R in Km, f in GHz)
     Rx_pw = Tx_pw - max(FSPL + LogF - G, MCL)
     SINR = Rx_pw - IN - F
     return SINR
@@ -118,8 +118,8 @@ class NominalSINR():
                                     'macro_cell_urban_900MHz': macro_cell,
                                     'macro_cell_rural': macro_cell
                                     }
-        self.list_of_parameters = {'macro_cell_urban_2GHz': {'A': 120.9, 'B': 37.6},
-                                    'macro_cell_urban_900MHz': {'A': 128.1, 'B': 37.6},
+        self.list_of_parameters = {'macro_cell_urban_2GHz': {'A': 128.1, 'B': 37.6},
+                                    'macro_cell_urban_900MHz': {'A': 120.9, 'B': 37.6},
                                     'macro_cell_rural': {'A': 95.5, 'B': 34.1}
                                     }       
         self.sinr_function = self.list_of_functions[name]
