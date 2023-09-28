@@ -104,11 +104,13 @@ The paper where KBRL was presented:
 
 @misc{alcaraz2022,
   author = {Alcaraz, Juan J. and Losilla, Fernando and Zanella, Andrea and Zorzi, Michele},  
-  title = {Model-Based Reinforcement Learning with Kernels for Resource Allocation in RAN Slices},  
-  year = {2022},  
+  title = title = {Model-{Based} {Reinforcement} {Learning} {With} {Kernels} for {Resource} {Allocation} in {RAN} {Slices}},,   
   publisher = {IEEE},  
   journal = {IEEE Transactions on Wireless Communications},  
-  note = {To Appear},  
+  year = {2023},
+  month = {1},
+  pages = {486--501},
+  volume = {22},
 }
 
 ## Licensing information
