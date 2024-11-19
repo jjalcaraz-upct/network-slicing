@@ -8,7 +8,7 @@ Source code of the paper "[Model-Based Reinforcement Learning with Kernels for R
 
 ## Acknowledgements
 
-This work us part of project [AriSe2](https://arise.upct.es) supported by Grant PID2020-116329GB-C22 funded by MICIU / AEI / 10.13039/501100011033
+This work is part of project [AriSe2](https://arise.upct.es) supported by Grant PID2020-116329GB-C22 funded by MICIU / AEI / 10.13039/501100011033
 
 <img src="img/MICINN_Gob_Web_AEI_2.jpg" align="center" width="40%"/>
 
